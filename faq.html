@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>
+    
+      FAQ &middot; TI-Boy CE
+    
+  </title>
+
+  
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/tiboyce/assets/css/main.css" />
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/tiboyce/favicon.png" />
+<link rel="shortcut icon" href="/tiboyce/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+  <!-- Additional head bits without overriding original head -->
+</head>
+
+
+  <body class="page">
+
+    <div id="sidebar">
+  <header>
+    <div class="site-title">
+      <a href="/tiboyce/">
+        
+          <span class="back-arrow icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+</svg></span>
+        
+        TI-Boy CE
+      </a>
+    </div>
+    <p class="lead">A Game Boy emulator for the TI-84 Plus CE and TI-83 Premium CE.</p>
+  </header>
+  <nav id="sidebar-nav-links">
+  
+    <a class="home-link "
+        href="/tiboyce/">Home</a>
+  
+  
+    <a class="page-link "
+	href="/tiboyce/blog/">Blog</a>
+  
+
+  
+
+  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+      <a class="page-link  active"
+          href="/tiboyce/faq.html">FAQ</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+      <a class="page-link "
+          href="/tiboyce/saveconverter/">Save Converter</a>
+    
+  
+
+  
+    
+      <a class="page-link "
+          href="/tiboyce/converter/">ROM Converter</a>
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  
+
+
+  
+    
+  
+
+  
+    
+      <a class="category-link "
+          href="/tiboyce/category/design.html">Design</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <a class="category-link "
+          href="/tiboyce/category/releases.html">Releases</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+      <a class="category-link "
+          href="/tiboyce/category/videos.html">Videos</a>
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  <!-- Optional additional links to insert in sidebar nav -->
+</nav>
+
+
+  
+    <span class="site-version">Currently Alpha v0.3.1</span>
+  
+
+  <nav id="sidebar-icon-links">
+  
+    <a id="github-link"
+       class="icon" title="Github Project" aria-label="Github Project"
+       href="https://github.com/calc84maniac/tiboyce">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+</svg>
+
+    </a>
+    <a id="github-download-link"
+       class="icon" title="Download" aria-label="Download"
+       href="https://github.com/calc84maniac/tiboyce/releases">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
+
+  
+    <a id="twitter-link"
+       class="icon" title="Twitter" aria-label="Twitter"
+       href="https://twitter.com/calc84maniac">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="M512,127.984c-15.18,5.969-38.008,8.641-54.125,7.203c9.234-6.531,32.688-25.64,38.125-55.187   c-24.055,15.719-57.742,22.266-72.133,22.031C406.234,88.281,384.102,80,360,80c-57.438,0-104,46.547-104,103.984   c0,5.406,0.539,10.688,1.336,15.875C215.883,199.109,123.695,183.031,48,95.984c-41.328,70.672,9.398,114.641,32,134.047   c-20.664,11.297-48-13.594-48-13.594s-1.328,83.875,84.945,100.938c-14.609,10.938-40.281,9.953-52.945,1.953   c17.461,67.938,91.148,71.828,96,71.828c-44.656,33-86,42.156-144,40.828c50.336,38,109.023,47.391,160,48   c40.047,0.469,76.813-7.781,105.961-19.906C403.289,409.594,464,303.375,464,183.984c0-3.281-0.195-6.5-0.492-9.703   C485.961,165.844,502.133,146.875,512,127.984z"/></g></svg>
+    </a>
+  
+
+  <a id="subscribe-link"
+     class="icon" title="Subscribe" aria-label="Subscribe"
+     href="/tiboyce/feed.xml">
+    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <circle cx="6.18" cy="17.82" r="2.18"/>
+    <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+</svg>
+  </a>
+
+  
+  
+  
+  
+
+  
+    <a id="tags-link"
+       class="icon"
+       title="Tags" aria-label="Tags"
+       href="/tiboyce/tags.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+    </a>
+  
+
+  
+    <a id="search-link"
+       class="icon"
+       title="Search" aria-label="Search"
+       href="/tiboyce/search.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
+
+  <!-- Optional additional links to insert for icons links -->
+</nav>
+  <p>
+  &copy; 2025.
+  <a href="https://github.com/calc84maniac/tiboyce/blob/master/LICENSE.md">GPLv3 License.</a>
+</p>
+
+</div>
+
+    <main class="container">
+      <header>
+  <h1 class="page-title">FAQ</h1>
+</header>
+<div class="content">
+  <p><strong>I ran into a bug or problem, how should I report it?</strong></p>
+
+<p class="message">
+  Check out the <a href="https://github.com/calc84maniac/tiboyce/issues">Issues on GitHub</a> and see if there's already an open issue.
+  Also, read the rest of this FAQ to see if it addresses your problem.
+  <br /><br />
+  If not, create an issue for the problem through the link above. Thanks!
+</p>
+
+<p><strong>I get ERR:INVALID when I try to run the emulator! What’s wrong?</strong></p>
+
+<p class="message">
+  TI-OS versions 5.5 and newer removed the ability to run ASM programs.
+  You have to use a jailbreak such as <a href="https://yvantt.github.io/arTIfiCE/">arTIfiCE</a> to restore this functionality.
+  <br /><br />
+  Also, on TI-OS versions prior to 5.3 you must unarchive the TIBOYCE program in the Memory menu and use the <b>Asm(</b> command from the Catalog to run it.
+</p>
+
+<p><strong>Can this play Game Boy Color games?</strong></p>
+
+<p class="message">
+  Yes! However, GBC is a stronger system so the performance may be worse, depending on the game.
+  <br /><br />
+  Note that some games cannot be played at all due to storage limitations; the calculator has only 3MB of storage, and a number of GBC games are 4MB.
+  Some of these games may still fit if there is enough empty space in the ROM that can be trimmed by the converter (see the later FAQ about storage).
+  The approximate limit is when the ROM converter produces files numbered up to 40.
+  <br /><br />
+  There are also some remaining issues to be resolved with certain games, mostly when they attempt to display more than 56 colors at once.
+  These games will run, but the colors may appear strange or the graphics garbled. This should be addressed in a future release.
+</p>
+
+<p><strong>What about Game Boy Advance?</strong></p>
+
+<p class="message">
+  No. Just no.
+</p>
+
+<p><strong>My original Game Boy game isn’t colorized, why not?</strong></p>
+
+<p class="message">
+  Only games in the Game Boy Color's colorization database will receive an automatic color palette.
+  For the others, you can select a palette manually in the settings.
+</p>
+
+<p><strong>How does saving work?</strong></p>
+
+<p class="message">
+  If a game has in-game saves stored on the cartridge, these are always saved when exiting the game (to a file ending in SAV).
+  These will be preserved when restarting the game, and in the unfortunate case of a soft crash the emulator will attempt to save this data.
+  <br /><br />
+  By default, the emulator will also automatically save the current game state when exiting (to a file ending in StA)
+  and automatically load it when starting again, much like Nintendo's Virtual Console.
+  Note that the StA file will not load without the corresponding SAV file.
+  <br /><br />
+  In addition, you can save or load the current game state to one of 10 slots through the emulator menu
+  (to a file ending with St#, and potentially one with Sv# if there are in-game saves, where # is the slot number).
+  These will stick around more reliably than auto save states, but keep in mind that a pair of St# and Sv# files can't be mixed and matched.
+  <br /><br />
+  Currently most of these files must be managed through the calculator's Memory menu, though it's now possible to delete save states and ROM
+  files directly from the emulator.
+  However, all of this information will still be useful when you need to transfer files to a PC or another calculator.
+</p>
+
+<p><strong>I tried sending converted ROM files to my calculator, but it tells me I’m out of space even though I clearly have enough! What’s going on here?</strong></p>
+
+<p class="message">
+  This is a quirk of TI's Archive storage system. Archive memory is split into 64KB sectors, and any given variable must be contained completely within that sector.
+  <br /><br />
+  Meanwhile, converted ROM files are split into 16KB contiguous chunks for performance reasons (several of these chunks may be contained in a single AppVar).
+  <br /><br />
+  If there is no empty space at the end of these ROM chunks that can be trimmed out, only three of them can fit into an AppVar, taking slightly over 48KB of space.
+  Whichever Archive sector holds this variable can only store files less than 16KB large in the remaining space, which means no more ROM data.
+  <br /><br />
+  In this worst case scenario (when no trimming is possible), this would mean you can only use 3/4 of your Archive space to store ROMs.
+  <br /><br />
+  <b>tl;dr:</b> It's expected behavior but there's no good solution for it other than deleting large files to make room. Sorry!
+</p>
+
+<p><strong>I want to link to my buddy’s calculator so we can trade pokeymans! Pretty please?</strong></p>
+
+<p class="message">
+  I'd like to make linking work, it would be pretty cool! I even bought a second calculator so I can mess around with that idea.
+  <br /><br />
+  USB is difficult though, and so is synchronizing emulation between two devices. I can't make any promises, but I'll at least give it a try sometime!
+</p>
+
+</div>
+
+    </main>
+
+    <!-- Optional footer content -->
+
+  </body>
+</html>
